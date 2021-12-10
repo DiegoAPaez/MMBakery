@@ -182,7 +182,7 @@ nav a:hover {
 .img_cafe,
 .img_sandwich,
 .img_coctel {
-    height: 25rem;
+    width: 100%;
     border-radius: 1rem;
     margin: 1rem auto;
 
@@ -225,6 +225,7 @@ nav a:hover {
     }
     .img_dym {
         grid-row: 1/2;
+        height: 25rem;
         margin: 0;
     }
     .titulo_cafe,
@@ -238,6 +239,7 @@ nav a:hover {
     .img_cafe {
         grid-row: 1/2;
         margin: 0;
+        height: 25rem;
     }
     .titulo_sandwich,
     .texto_sandwich {
@@ -250,6 +252,7 @@ nav a:hover {
     .img_sandwich {
         grid-row: 1/2;
         margin: 0;
+        height: 25rem;
     }
     .titulo_coctel,
     .texto_coctel {
@@ -262,6 +265,7 @@ nav a:hover {
     .img_coctel {
         grid-row: 1/2;
         margin: 0;
+        height: 25rem;
     }
 }
 
