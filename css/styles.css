@@ -23,15 +23,16 @@ body {
     line-height: 2;
 }
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 a:link,
 a:visited {
-    color: white;
+    color: white !important;
 }
 nav a:hover {
-    background-color: var(--rojo);
-    border-radius: .5rem;
+    background-color: var(--rojo) !important;
+    border-radius: .5rem !important;
+    padding: .5rem;
 }
 .no-margin {
     margin: 0;
@@ -61,7 +62,7 @@ nav a:hover {
 .header__tyson,
 .header__panaderia,
 .header__menu {
-    height: 30rem;
+    height: 25rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -71,7 +72,7 @@ nav a:hover {
     .header__tyson,
     .header__panaderia,
     .header__menu {
-        height: 60rem;
+        height: 40rem;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -126,6 +127,7 @@ nav a:hover {
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+    padding: .5rem;
 }
 
 
@@ -134,7 +136,7 @@ nav a:hover {
     font-family: var(--title);
     color: var(--gris);
     text-align: center;
-    font-size: 6rem;
+    font-size: 4rem;
 }
 .presentacion {
     background-color: var(--blanco);
@@ -164,9 +166,20 @@ nav a:hover {
 .titulo_coctel {
     font-family: var(--fuentePrincipal);
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 0;
+}
+@media (min-width: 768px) {
+    .presentacion__titulo {
+        font-size: 5rem;
+    }
+    .titulo_dym,
+    .titulo_cafe,
+    .titulo_sandwich,
+    .titulo_coctel {
+        font-size: 3rem;
+    }
 }
 
 .texto_dym,
@@ -192,10 +205,76 @@ nav a:hover {
     .cafe,
     .sandwich,
     .coctel {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         width: 90%;
+        height: auto;
+    }
+    .desayuno {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .cafe {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-content: center;
+    }
+    .sandwich {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .coctel {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .titulo_dym,
+    .texto_dym {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .texto_dym {
+        margin-top: 10rem;
+    }
+    .img_dym {
+        grid-row: 1/2;
+        margin: 0;
+    }
+    .titulo_cafe,
+    .texto_cafe {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .texto_cafe {
+        margin-top: 10rem;
+    }
+    .img_cafe {
+        grid-row: 1/2;
+        margin: 0;
+    }
+    .titulo_sandwich,
+    .texto_sandwich {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .texto_sandwich {
+        margin-top: 10rem;
+    }
+    .img_sandwich {
+        grid-row: 1/2;
+        margin: 0;
+    }
+    .titulo_coctel,
+    .texto_coctel {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .texto_coctel {
+        margin-top: 10rem;
+    }
+    .img_coctel {
+        grid-row: 1/2;
+        margin: 0;
     }
 }
 @media (min-width: 992px) {
@@ -225,7 +304,7 @@ nav a:hover {
     }
     .img_dym {
         grid-row: 1/2;
-        height: 25rem;
+        height: 100%;
         margin: 0;
     }
     .titulo_cafe,
@@ -239,7 +318,7 @@ nav a:hover {
     .img_cafe {
         grid-row: 1/2;
         margin: 0;
-        height: 25rem;
+        height: 100%;
     }
     .titulo_sandwich,
     .texto_sandwich {
@@ -252,7 +331,7 @@ nav a:hover {
     .img_sandwich {
         grid-row: 1/2;
         margin: 0;
-        height: 25rem;
+        height: 100%;
     }
     .titulo_coctel,
     .texto_coctel {
@@ -265,7 +344,7 @@ nav a:hover {
     .img_coctel {
         grid-row: 1/2;
         margin: 0;
-        height: 25rem;
+        height: 100%;
     }
 }
 
@@ -329,6 +408,69 @@ nav a:hover {
         width: auto;
     }
 }
+.pizza__titulo {
+    font-family: var(--title);
+    font-size: 4rem;
+    color: var(--gris);
+}
+.pizza {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: .5rem;
+}
+.pizza__nombre {
+    font-family: var(--fuentePrincipal);
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--gris);
+    text-align: center;
+}
+.pizza__descripcion {
+    font-family: var(--fuentePrincipal);
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--gris);
+}
+
+/* PANADERIA */
+.panaderia__slide {
+    text-align: center;
+}
+.masamadre__titulo {
+    font-family: var(--title);
+    color: var(--gris);
+    font-size: 4rem;
+    text-align: center;
+}
+.masamadre__texto {
+    font-family: var(--fuentePrincipal);
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--gris);
+    text-align: justify;
+}
+/* MENU */
+.menu__titulo {
+    font-family: var(--title);
+    color: var(--gris);
+    font-size: 3rem;
+}
+.menu__opcion {
+    font-family: var(--fuentePrincipal);
+    font-weight: 500;
+    color: var(--gris);
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+.menu__descripcion {
+    font-family: var(--fuentePrincipal);
+    font-weight: 300;
+    color: var(--gris);
+    font-size: 1.2rem;
+    padding-left: 4rem;
+}
+.img__menu {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 
 /* CONTACTO */
@@ -388,6 +530,7 @@ nav a:hover {
 .checkbox {
     margin-bottom: 1rem;
 }
+
 /* FOOTER */
 .footer {
     background-color: var(--verdeOscuro);
@@ -400,7 +543,7 @@ nav a:hover {
     .footer__flex {
         display: flex;
         justify-content: space-between;
-        max-width: 90%;
+        width: 70%;
         align-items: center;
     }
 }
