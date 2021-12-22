@@ -23,40 +23,6 @@
         background-repeat: no-repeat;
         background-position: center center;
     }
-    .barra {
-        padding-top: 2rem;
-        text-align: center;
-
-        .logo {
-            text-shadow: 1px 1px 2px #000000;
-            color: var(--blanco);
-
-            &__nombre {
-                font-family: var(--title);
-                font-size: 5rem;
-            }
-            &__span {
-                font-family: var(--fuentePrincipal);
-                font-weight: 300;
-                font-size: 1.5rem;
-            }
-        }
-        .navegacion {
-            list-style: none;
-            text-shadow: 1px 1px 2px #000000;
-            font-family: var(--fuentePrincipal);
-            font-weight: 500;
-            color: var(--blanco);
-
-            &__enlace {
-                display: block;
-                text-align: center;
-                font-size: 1.8rem;
-                color: var(--blanco);
-                padding: .5rem;
-            }
-        }
-    }
     @media (min-width: 768px) {
         height: 40rem;
         background-size: cover;
@@ -71,19 +37,54 @@
             background-repeat: no-repeat;
             background-position: center center;
         }
-        .barra {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            .navegacion {
-                display: flex;
-                gap: 2rem;
-            }
+    }
+}
+.barra {
+    padding-top: 2rem;
+    text-align: center;
+
+    .logo {
+        text-shadow: 1px 1px 2px #000000;
+        color: var(--blanco);
+
+        &__nombre {
+            font-family: var(--title);
+            font-size: 5rem;
+        }
+        &__span {
+            font-family: var(--fuentePrincipal);
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+    .navegacion {
+        list-style: none;
+        text-shadow: 1px 1px 2px #000000;
+        font-family: var(--fuentePrincipal);
+        font-weight: 500;
+        color: var(--blanco);
+
+        &__enlace {
+            display: block;
+            text-align: center;
+            font-size: 1.8rem;
+            color: var(--blanco);
+            padding: .5rem;
         }
     }
 }
-
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .navegacion {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}
 /*MAIN SECTION*/
 .presentacion__titulo {
     font-family: var(--title);

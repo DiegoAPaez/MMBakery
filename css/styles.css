@@ -56,65 +56,28 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  }
+}
   
-  .header__tyson {
+.header__tyson {
     background-image: url(../img/portadaTyson.jpg);
-  }
+}
   
-  .header__panaderia {
+.header__panaderia {
     background-image: url(../img/portadaPanaderia.jpg);
-  }
+}
   
-  .header__menu {
+.header__menu {
     background-image: url(../img/portadaMenu.jpg);
-  }
+}
   
-  .header__tyson, .header__panaderia, .header__menu {
+.header__tyson, .header__panaderia, .header__menu {
     height: 25rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  }
+}
   
-  .header .barra {
-    padding-top: 2rem;
-    text-align: center;
-  }
-  
-  .header .barra .logo {
-    text-shadow: 1px 1px 2px #000000;
-    color: var(--blanco);
-  }
-  
-  .header .barra .logo__nombre {
-    font-family: var(--title);
-    font-size: 5rem;
-  }
-  
-  .header .barra .logo__span {
-    font-family: var(--fuentePrincipal);
-    font-weight: 300;
-    font-size: 1.5rem;
-  }
-  
-  .header .barra .navegacion {
-    list-style: none;
-    text-shadow: 1px 1px 2px #000000;
-    font-family: var(--fuentePrincipal);
-    font-weight: 500;
-    color: var(--blanco);
-  }
-  
-  .header .barra .navegacion__enlace {
-    display: block;
-    text-align: center;
-    font-size: 1.8rem;
-    color: var(--blanco);
-    padding: .5rem;
-  }
-  
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .header {
       height: 40rem;
       background-size: cover;
@@ -127,7 +90,47 @@ nav a:hover {
       background-repeat: no-repeat;
       background-position: center center;
     }
-    .header .barra {
+}
+  
+.barra {
+    padding-top: 2rem;
+    text-align: center;
+}
+  
+.barra .logo {
+    text-shadow: 1px 1px 2px #000000;
+    color: var(--blanco);
+}
+  
+.barra .logo__nombre {
+    font-family: var(--title);
+    font-size: 5rem;
+}
+  
+.barra .logo__span {
+    font-family: var(--fuentePrincipal);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+  
+.barra .navegacion {
+    list-style: none;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: var(--fuentePrincipal);
+    font-weight: 500;
+    color: var(--blanco);
+}
+  
+.barra .navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    padding: .5rem;
+}
+  
+@media (min-width: 768px) {
+    .barra {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -138,7 +141,7 @@ nav a:hover {
           -ms-flex-align: center;
               align-items: center;
     }
-    .header .barra .navegacion {
+    .barra .navegacion {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -571,6 +574,14 @@ nav a:hover {
 
 
 /* CONTACTO */
+.formulario {
+    background-color: var(--verdeClaro);
+    width: min(80rem, 100%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
 .formulario fieldset {
     border: none;
 }
