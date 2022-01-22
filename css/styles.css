@@ -51,7 +51,7 @@ nav a:hover {
 }
 /*NAVEGACION*/
 .header {
-  background-image: url(../img/portada.jpg);
+  background-image: url(../img/portada.webp);
   height: 25rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,15 +59,15 @@ nav a:hover {
 }
 
 .header__tyson {
-  background-image: url(../img/portadaTyson.jpg);
+  background-image: url(../img/portadaTyson.webp);
 }
 
 .header__panaderia {
-  background-image: url(../img/portadaPanaderia.jpg);
+  background-image: url(../img/portadaPanaderia.webp);
 }
 
 .header__menu {
-  background-image: url(../img/portadaMenu.jpg);
+  background-image: url(../img/portadaMenu.webp);
 }
 
 .header__tyson, .header__panaderia, .header__menu {

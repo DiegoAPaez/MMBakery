@@ -17,17 +17,17 @@ $colores: (
     background-position: center center;
 }
 .header {
-    background-image: url(../img/portada.jpg);
+    background-image: url(../img/portada.webp);
     @extend .img__header;
 
     &__tyson {
-        background-image: url(../img/portadaTyson.jpg);
+        background-image: url(../img/portadaTyson.webp);
     }
     &__panaderia {
-        background-image: url(../img/portadaPanaderia.jpg);
+        background-image: url(../img/portadaPanaderia.webp);
     }
     &__menu {
-        background-image: url(../img/portadaMenu.jpg);
+        background-image: url(../img/portadaMenu.webp);
     }
     &__tyson,
     &__panaderia,
