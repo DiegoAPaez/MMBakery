@@ -29,6 +29,32 @@
                         <li><a href="./menu.html" class="navegacion__enlace">Menú</a></li>
                         <li><a href="./panaderia.html" class="navegacion__enlace">Panaderia</a></li>
                         <li><a href="./contacto.html" class="navegacion__enlace">Contacto</a></li>
+                        <li class="submenu">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="6" cy="19" r="2" />
+                                <circle cx="17" cy="19" r="2" />
+                                <path d="M17 17h-11v-14h-2" />
+                                <path d="M6 5l14 1l-1 7h-13" />
+                            </svg>
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th class="tabla-nombre">Nombre</th>
+                                            <th class="tabla-precio">Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <p class="total__carrito"></p>
+                                <a href="#" class="boton__confirmar">Confirmar</a>
+                                <a href="#" id="vaciar-carrito" class="button__carrito boton__vaciar">Vaciar Carrito</a>
+                            </div>
+                        </li>
                     </nav>
                 </div>
             </div>
@@ -36,126 +62,154 @@
     <main>
         <div class="container">
             <h2 class="text-center mt-4 mb-4 pizza__titulo">Tradicional estilo italiano!</h2>
-            <div class="row">
+            <div class="row" id="lista-sabores">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-right">
                     <h3 class="pb-3 pizza__nombre">Pizza 4 Quesos</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Parmesano, fior di latte, queso azul, provolone ahumado y miel.</p>
+                        <p class="col-8 pizza__descripcion">Parmesano, fior di latte, queso azul, provolone ahumado y miel.</p>
                         <img class="col-auto" src="./img/Pizzas/4Quesos.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">970</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">130</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="0">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="12">Porción</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-left">
                     <h3 class="pb-3 pizza__nombre">Pizza Marinara</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Salsa de tomate, láminas de ajo, alcaparras fritas, aceitunas negras y orégano..</p>
+                        <p class="col-8 pizza__descripcion">Salsa de tomate, láminas de ajo, alcaparras fritas, aceitunas negras y orégano..</p>
                         <img class="col-auto" src="./img/Pizzas/Marinara.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">770</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">100</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="1">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="13">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-right">
                     <h3 class="pb-3 pizza__nombre">Pizza Margarita</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Salsa de tomate, parmesano, fior di latte y albahaca.</p>
+                        <p class="col-8 pizza__descripcion">Salsa de tomate, parmesano, fior di latte y albahaca.</p>
                         <img class="col-auto" src="./img/Pizzas/Margarita.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">850</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">120</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="2">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="14">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-left">
                     <h3 class="pb-3 pizza__nombre">Pizza Margarita con Jamón Crudo</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Salsa de tomate, parmesano, fior di latte, albahaca y jamón crudo.</p>
+                        <p class="col-8 pizza__descripcion">Salsa de tomate, parmesano, fior di latte, albahaca y jamón crudo.</p>
                         <img class="col-auto" src="./img/Pizzas/Margarita Crudo.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">1020</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">140</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="3">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="15">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-right">
                     <h3 class="pb-3 pizza__nombre">Pizza de Jamón y Hongos</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Salsa de tomate, parmesano, fior di latte, hongos frescos, jamón de cerdo natural, huevo duro rallado, aceitunas negras y orégano.</p>
+                        <p class="col-8 pizza__descripcion">Salsa de tomate, parmesano, fior di latte, hongos frescos, jamón de cerdo natural, huevo duro rallado, aceitunas negras y orégano.</p>
                         <img class="col-auto" src="./img/Pizzas/Jamon y hongos.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">1050</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">145</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="4">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="16">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-left">
                     <h3 class="pb-3 pizza__nombre">Pizza Nduja y Stracciatella</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Salsa de tomate, Nduja calabresa, stracciatella, albahaca, berenjenas y pimienta molida.</p>
+                        <p class="col-8 pizza__descripcion">Salsa de tomate, Nduja calabresa, stracciatella, albahaca, berenjenas y pimienta molida.</p>
                         <img class="col-auto" src="./img/Pizzas/nduja.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">950</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">125</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="5">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="17">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-right">
                     <h3 class="pb-3 pizza__nombre">Pizza Burrata y Crudo</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Salsa de tomate, jamón crudo, burrata, tomates cherry confitados, escadas de parmesano, albahaca y pimienta negra molida.</p>
+                        <p class="col-8 pizza__descripcion">Salsa de tomate, jamón crudo, burrata, tomates cherry confitados, escadas de parmesano, albahaca y pimienta negra molida.</p>
                         <img class="col-auto" src="./img/Pizzas/burrata y crudo.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">1020</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">140</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="6">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="18">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-left">
                     <h3 class="pb-3 pizza__nombre">Pizza Calabaza y Burrata</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Crema de calabaza, parmesano, burrata, tomates cherry confitados, hummus de remolacha y escamas de parmesano.</p>
+                        <p class="col-8 pizza__descripcion">Crema de calabaza, parmesano, burrata, tomates cherry confitados, hummus de remolacha y escamas de parmesano.</p>
                         <img class="col-auto" src="./img/Pizzas/calabaza y burrata.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">1000</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">130</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="7">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="19">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-right">
                     <h3 class="pb-3 pizza__nombre">Pizza Calabaza y Hongos</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Crema de calabaza, parmesano, fior di latte, albahaca, hongos frescos, cubos de berenjena y provolone ahumado.</p>
+                        <p class="col-8 pizza__descripcion">Crema de calabaza, parmesano, fior di latte, albahaca, hongos frescos, cubos de berenjena y provolone ahumado.</p>
                         <img class="col-auto" src="./img/Pizzas/calabaza y hongos.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">1030</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">140</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="8">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="20">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-left">
                     <h3 class="pb-3 pizza__nombre">Pizza Nuez y Bondiola</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Crema de nuez, fior di latte, queso azul, bondiola de cerdo ahumada y hummus de remolada.</p>
+                        <p class="col-8 pizza__descripcion">Crema de nuez, fior di latte, queso azul, bondiola de cerdo ahumada y hummus de remolada.</p>
                         <img class="col-auto" src="./img/Pizzas/bondiola y nuez.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">960</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">130</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="9">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="21">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-right">
                     <h3 class="pb-3 pizza__nombre">Pizza Mortadella</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Parmesano, fior di latte, mortadella con pistachos, ricota, pesto de kale y escamas de parmesano.</p>
+                        <p class="col-8 pizza__descripcion">Parmesano, fior di latte, mortadella con pistachos, ricota, pesto de kale y escamas de parmesano.</p>
                         <img class="col-auto" src="./img/Pizzas/mortadella.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">1070</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">150</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="10">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="22">Porción</a>
                     </div>
+                    
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 gap-1 mt-3 mb-3 pt-2 pb-2 pizza" data-aos="fade-left">
                     <h3 class="pb-3 pizza__nombre">Pizza Khachapuri</h3>
                     <div class="row align-items-center">
-                        <p class="col pizza__descripcion">Provolone ahumado, hebras de muzzarella, escamas de parmesano, un toque final de huevo frito y terminacion de ciboulette.</p>
+                        <p class="col-8 pizza__descripcion">Provolone ahumado, hebras de muzzarella, escamas de parmesano, un toque final de huevo frito y terminacion de ciboulette.</p>
                         <img class="col-auto" src="./img/Pizzas/khachapuri.webp" alt="">
+                        <p class="col-12">Unidad $<span class="precio">960</span></p>
+                        <p class="col-12">Porción $<span class="precio_porcion">130</span></p>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-carrito boton__agregar" data-id="11">Agregar</a>
+                        <a href="#" class="col-3 mx-auto button__carrito agregar-porcion boton__agregar" data-id="23">Porción</a>
                     </div>
+                    
                 </div>
             </div>
         </div>
         
     </main>
-    <!-- <footer class="footer">
-        <div class="contenedor footer__flex">
-            <div class="social no-margin centrar-texto">
-                <a class="logo" href="./index.html">
-                    <h1 class="logo__nombre no-margin">Masa Madre <span class="logo__span">BKRY</span></h1>
-                </a>
-                <a href="https://www.facebook.com/MasaMadreBKRY" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                    </svg></a>
-                <a href="https://api.whatsapp.com/send/?phone=543416961252&text=Hola+Masa+Madre%21&app_absent=0" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                    </svg></a>
-                <a href="https://www.instagram.com/masamadrebkry/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <rect x="4" y="4" width="16" height="16" rx="4" />
-                    <circle cx="12" cy="12" r="3" />
-                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                    </svg></a>
-                <p class="derechos">Todos los derechos reservados</p>
-            </div>
-            <div class="footer__datos no-margin centrar-texto">
-                <p class="footer__titulo">Horarios:</p>
-                <p class="footer__texto">Lunes a Viernes 07 a 00hs <br> Sabados y Domingos 08 a 01hs</p>
-                <p class="footer__titulo">Dirección:</p>
-                <a class="footer__texto" href="https://g.page/MasaMadreRosario?share" target="_blank">Callao 286 - Rosario, Santa Fe</a>
-            </div>
-        </div>
-    </footer> -->
     <footer class="footer">
         <div class="container">
             <div class="row text-center">
@@ -191,8 +245,10 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
