@@ -74,7 +74,7 @@ function agregarSabor(e) {
 // }
 function leerDatosSabor(sabor) {
     const IDSaborJSON = sabor.getAttribute('data-id');
-    const url = '/data/datos.json'
+    const url = './data/datos.json'
     fetch(url)
        .then (respuesta => respuesta.json())
        .then (resultado => {
@@ -127,7 +127,6 @@ function carritoHTML() {
                <td><a href="#" class="button__carrito borrar-sabor boton__vaciar" data-id="${id}">X</a></td>`;
         contenedorCarrito.appendChild(row);
     });
-    console.log(articulosCarrito)
     totalCheckout();
     sincronizarStorage();
 }
@@ -160,7 +159,6 @@ function totalCheckout () {
         totalCarrito.push(costoProducto);
     }
     const checkout = totalCarrito.reduce((a , b) => a + b, 0);
-    console.log(checkout)
     document.querySelector('.total__carrito').textContent = `TOTAL: $${checkout}`;
 }
 
