@@ -85,84 +85,84 @@
     },
     {
         "imagen" : "./img/Pizzas/4Quesos.webp",
-        "titulo" : "PORCION - 4 Quesos",
+        "titulo" : "PORCIÓN - Pizza 4 Quesos",
         "precio" : "130",
         "cantidad" : "1",
         "id" : 12
     },
     {
         "imagen" : "./img/Pizzas/Marinara.webp",
-        "titulo" : "PORCION - Marinara",
+        "titulo" : "PORCIÓN - Pizza Marinara",
         "precio" : "100",
         "cantidad" : "1",
         "id" : 13
     },
     {
         "imagen" : "./img/Pizzas/Margarita.webp",
-        "titulo" : "PORCION - Margarita",
+        "titulo" : "PORCIÓN - Pizza Margarita",
         "precio" : "120",
         "cantidad" : "1",
         "id" : 14
     },
     {
         "imagen" : "./img/Pizzas/Margarita Crudo.webp",
-        "titulo" : "PORCION - Margarita con Jamón Crudo",
+        "titulo" : "PORCIÓN - Pizza Margarita con Jamón Crudo",
         "precio" : "140",
         "cantidad" : "1",
         "id" : 15
     },
     {
         "imagen" : "./img/Pizzas/Jamon y hongos.webp",
-        "titulo" : "PORCION - de Jamón y Hongos",
+        "titulo" : "PORCIÓN - Pizza de Jamón y Hongos",
         "precio" : "145",
         "cantidad" : "1",
         "id" : 16
     },
     {
         "imagen" : "./img/Pizzas/nduja.webp",
-        "titulo" : "PORCION - Nduja y Stracciatella<",
+        "titulo" : "PORCIÓN - Pizza Nduja y Stracciatella<",
         "precio" : "125",
         "cantidad" : "1",
         "id" : 17
     },
     {
         "imagen" : "./img/Pizzas/burrata y crudo.webp",
-        "titulo" : "PORCION - Burrata y Crudo",
+        "titulo" : "PORCIÓN - Pizza Burrata y Crudo",
         "precio" : "140",
         "cantidad" : "1",
         "id" : 18
     },
     {
         "imagen" : "./img/Pizzas/calabaza y burrata.webp",
-        "titulo" : "PORCION - Calabaza y Burrata",
+        "titulo" : "PORCIÓN - Pizza Calabaza y Burrata",
         "precio" : "130",
         "cantidad" : "1",
         "id" : 19
     },
     {
         "imagen" : "./img/Pizzas/calabaza y hongos.webp",
-        "titulo" : "PORCION - Calabaza y Hongos",
+        "titulo" : "PORCIÓN - Pizza Calabaza y Hongos",
         "precio" : "140",
         "cantidad" : "1",
         "id" : 20
     },
     {
         "imagen" : "./img/Pizzas/bondiola y nuez.webp",
-        "titulo" : "PORCION - Nuez y Bondiola",
+        "titulo" : "PORCIÓN - Pizza Nuez y Bondiola",
         "precio" : "130",
         "cantidad" : "1",
         "id" : 21
     },
     {
         "imagen" : "./img/Pizzas/mortadella.webp",
-        "titulo" : "PORCION - Mortadella",
+        "titulo" : "PORCIÓN - Pizza Mortadella",
         "precio" : "150",
         "cantidad" : "1",
         "id" : 22
     },
     {
         "imagen" : "./img/Pizzas/khachapuri.webp",
-        "titulo" : "PORCION - Khachapuri",
+        "titulo" : "PORCIÓN - Pizza Khachapuri",
         "precio" : "130",
         "cantidad" : "1",
         "id" : 23

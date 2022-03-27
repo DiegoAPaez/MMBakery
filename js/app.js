@@ -45,22 +45,41 @@ function agregarSabor(e) {
         // Enviamos el sabor seleccionado para tomar sus datos
         leerDatosSabor(saborSeleccionado);
     }
-    if(e.target.classList.contains('agregar-porcion')) {
-        const saborSeleccionado = e.target;
-        // Enviamos el sabor seleccionado para tomar sus datos
-        leerDatosSabor(saborSeleccionado);
-    }
 }
 
 // Lee los datos del sabor seleccionado
+// function leerDatosSabor(sabor) {
+//     const infoSabor = {
+//         imagen: sabor.querySelector('img').src,
+//         titulo: sabor.querySelector('h3').textContent,
+//         precio: sabor.querySelector('.precio').textContent,
+//         id: sabor.querySelector('a').getAttribute('data-id'), 
+//         cantidad: 1
+//     }
+    
+//     if( articulosCarrito.some( sabor => sabor.id === infoSabor.id ) ) { 
+//             const sabores = articulosCarrito.map( sabor => {
+//                 if( sabor.id === infoSabor.id ) {
+//                     sabor.cantidad++;
+//                     return sabor;
+//                  } else {
+//                     return sabor;
+//                 }
+//             })
+//             articulosCarrito = [...sabores];
+//     }   else {
+//             articulosCarrito = [...articulosCarrito, infoSabor];
+//     }
+//     carritoHTML();
+// }
 function leerDatosSabor(sabor) {
     const IDSaborJSON = sabor.getAttribute('data-id');
-    const url = './data/datos.json'
+    const url = '/data/datos.json'
     fetch(url)
        .then (respuesta => respuesta.json())
        .then (resultado => {
            const infoSabor = resultado[IDSaborJSON]
-        //    infoSabor.id = IDSaborJSON
+           infoSabor.id = IDSaborJSON
            if( articulosCarrito.some( sabor => sabor.id === infoSabor.id ) ) { 
                const sabores = articulosCarrito.map( sabor => {
                    if( sabor.id === infoSabor.id ) {
@@ -76,6 +95,7 @@ function leerDatosSabor(sabor) {
        }
        carritoHTML();})    
 }
+
 
 // Elimina elemento del carrito en el DOM
 function eliminarSabor(e) {
@@ -107,6 +127,7 @@ function carritoHTML() {
                <td><a href="#" class="button__carrito borrar-sabor boton__vaciar" data-id="${id}">X</a></td>`;
         contenedorCarrito.appendChild(row);
     });
+    console.log(articulosCarrito)
     totalCheckout();
     sincronizarStorage();
 }
@@ -139,6 +160,7 @@ function totalCheckout () {
         totalCarrito.push(costoProducto);
     }
     const checkout = totalCarrito.reduce((a , b) => a + b, 0);
+    console.log(checkout)
     document.querySelector('.total__carrito').textContent = `TOTAL: $${checkout}`;
 }
 
